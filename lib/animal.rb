@@ -1,3 +1,5 @@
+
+
 class Animal
 
 	def likes?(food)
@@ -5,7 +7,7 @@ class Animal
 	end
 
 	def acceptable_food
-		[]
+		[:bacon]
 	end
 
 end

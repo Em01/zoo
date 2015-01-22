@@ -1,6 +1,6 @@
 class Panda < Animal
 	
 	def acceptable_food
-		[:bamboo]
+		super + [:bamboo]
 	end
 end
