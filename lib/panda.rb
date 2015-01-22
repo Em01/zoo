@@ -1,6 +1,11 @@
 class Panda
 
+	
 	def likes?(food)
-		food.to_sym == :bamboo
+		acceptable_food.include?(food.to_sym)
+	end
+
+	def acceptable_food
+		[:bamboo]
 	end
 end
