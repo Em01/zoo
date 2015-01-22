@@ -1,4 +1,6 @@
+require 'animal'
 require 'lion'
+
 
 describe Lion do 
 	it "should like wildebeests" do 

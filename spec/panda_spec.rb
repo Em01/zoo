@@ -1,4 +1,6 @@
+require 'animal'
 require 'panda'
+
 
 describe Panda do 
 

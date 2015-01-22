@@ -1,10 +1,8 @@
-class Panda
+# require 'spec_helper'
+require 'animal'
 
+class Panda < Animal
 	
-	def likes?(food)
-		acceptable_food.include?(food.to_sym)
-	end
-
 	def acceptable_food
 		[:bamboo]
 	end

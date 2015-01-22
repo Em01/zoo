@@ -1,8 +1,7 @@
-class Lion
+require 'animal'
 
-	def likes?(food)
-		acceptable_food.include?(food.to_sym)
-	end
+
+class Lion < Animal
 
 	def acceptable_food
 		[:wildebeests, :zebras]
