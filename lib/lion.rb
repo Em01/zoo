@@ -1,6 +1,7 @@
 class Lion
 
 	def likes?(food)
-		food.to_sym == :wildebeests
+		acceptable_food = [:wildebeests, :zebras]
+		acceptable_food.include?(food.to_sym)
 	end
 end
