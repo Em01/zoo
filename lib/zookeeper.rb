@@ -1,3 +1,4 @@
+require 'animal'
 require 'panda'
 
 class Zookeeper
