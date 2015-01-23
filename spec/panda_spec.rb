@@ -25,7 +25,12 @@ describe Panda do
 		31.times do  
 			panda.eat(:bamboo)
 		end
-		expect(panda).to be_full
-		
+		expect(panda).to be_full	
 	end
+
+	it "should not be full after 1" do 
+		panda = Panda.new
+		panda.eat(:bamboo)
+		expect(panda).to_not be_full
+		end
 end 
