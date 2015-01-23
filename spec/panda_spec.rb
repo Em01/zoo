@@ -25,7 +25,7 @@ describe Panda do
 		31.times do  
 			panda.eat(:bamboo)
 		end
-		expect(panda).to be full
-
+		expect(panda).to be_full
+		
 	end
 end 
