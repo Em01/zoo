@@ -11,5 +11,9 @@ describe Zookeeper do
     expect(panda).to receive(:eat).with(:bamboo)
     Zookeeper.new.feed(food: :bamboo, to: panda)
 end
-	# it "should be able to feed zebras to the lions"
+	it "should be able to feed zebras to the lions" do 
+	lion = Lion.new
+    expect(lion).to receive(:eat).with(:zebras)
+    Zookeeper.new.feed(food: :zebras, to: lion)
+	end 
 end 

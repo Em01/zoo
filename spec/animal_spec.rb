@@ -6,4 +6,9 @@ describe Animal do
 			Animal.new.likes?(:bacon)
 		}.to_not raise_error
 	end
+
+	it "should be able to eat the food" do 
+		animal = Animal.new
+		expect(animal.eat(:bacon)).to be true
+	end
 end
