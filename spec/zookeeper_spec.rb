@@ -8,7 +8,7 @@ describe Zookeeper do
 
 	it "should be able to feed the bamboo to the pandas" do 
     panda = Panda.new
-    panda.should_receive(:eat).with(:bamboo)
+    expect(panda).to receive(:eat).with(:bamboo)
     Zookeeper.new.feed(food: :bamboo, to: panda)
 end
 	# it "should be able to feed zebras to the lions"
