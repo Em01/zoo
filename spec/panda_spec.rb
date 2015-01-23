@@ -19,4 +19,13 @@ describe Panda do
 	it "should be able to eat the food" do 
 		expect(Panda.new.eat(:bamboo)).to be true
 	end
+
+	it "should be full after eating 30 bamboo" do
+		panda = Panda.new
+		31.times do  
+			panda.eat(:bamboo)
+		end
+		expect(panda).to be full
+
+	end
 end 
